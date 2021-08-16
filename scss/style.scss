@@ -1,0 +1,58 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './variables';
+@import './aos/aos.scss';
+
+// Blocks
+@import './blocks/header.scss';
+@import './blocks/main-menu.scss';
+@import './blocks/main.scss';
+@import './blocks/hero-section.scss';
+@import './blocks/section-title.scss';
+@import './blocks/btn.scss';
+@import './blocks/grafics-panel.scss';
+@import './blocks/bridges.scss';
+@import './blocks/quotes.scss';
+@import './blocks/select.scss';
+@import './blocks/transfer-form.scss';
+@import './blocks/tabs.scss';
+@import './blocks/rankings.scss';
+@import './blocks/hot-news.scss';
+@import './blocks/footer.scss';
+@import './blocks/page-content.scss';
+@import './blocks/bridge-parameters.scss';
+@import './blocks/path-link.scss';
+@import './blocks/company-rate.scss';
+@import './blocks/total-value.scss';
+@import './blocks/exchange-scheme.scss';
+@import './blocks/menu-button.scss';
+@import './blocks/response-form.scss';
+@import './blocks/currency-item-popup.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', 'Roboto', sans-serif;
+  color: $font-dark;
+
+  @media (max-width: 420px) {
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  min-width: 320px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 420px) {
+    padding: 0 20px;
+  }
+}
