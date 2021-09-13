@@ -49,6 +49,7 @@
 
   &__card-content {
     padding-top: 15px;
+    width: 100%;
 
     @media (max-width: 1024px) {
       padding: 15px 10px 15px;
@@ -61,6 +62,7 @@
 
   &__card-image {
     height: 100%;
+    width: 385px;
     object-fit: cover;
     border-radius: 16px;
     margin-right: 45px;
@@ -86,6 +88,7 @@
 
   &__card-main-content {
     display: flex;
+    justify-content: space-between;
     flex: auto;
 
     @media (max-width: 1024px) {
