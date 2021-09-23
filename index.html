@@ -11,6 +11,63 @@
 </head>
 
 <body>
+
+  <!-- CONTACT US POP-UP -->
+
+  <div class="contact-us-popup">
+    <div class="contact-us-popup__container">
+      <button class="contact-us-popup__close"></button>
+
+      <h2 class="contact-us-popup__title">Contact us</h2>
+      <p class="contact-us-popup__subtitle">
+        by accepting this invitation you are<br>creating a new account.
+      </p>
+      <form class="popup-form" id="contactForm">
+        <div class="popup-form__input-block">
+          <input class="error" type="text" placeholder="Your name*">
+          <span class="popup-form__error-text-block">Your name is not specified</span>
+        </div>
+        <div class="popup-form__input-block">
+          <input class="error" type="text" placeholder="Your website*">
+          <span class="popup-form__error-text-block">Website is not specified</span>
+        </div>
+        <div class="popup-form__input-block">
+          <input type="email" placeholder="Your e-mail*">
+          <span class="popup-form__error-text-block">Your e-mail is not specified</span>
+        </div>
+        <div class="popup-form__input-block">
+          <input type="text" placeholder="Your Telegram account*">
+          <span class="popup-form__error-text-block">You Telegram account is not specified</span>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input">
+          <span class="checkbox__box"></span>
+          <span>I agree to&nbsp;<a class="text-link" href="">terms & conditions</a></span>
+        </label>
+        <button class="btn btn_popup">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <!-- CONFIRMATION -->
+
+  <div class="contact-us-popup">
+    <div class="contact-us-popup__container" id="contactPopupConfirm">
+      <button class="contact-us-popup__close"></button>
+
+      <img src="./images/confirm-icon.svg" alt="">
+      <h2 class="contact-us-popup__title">Thank you!</h2>
+      <p class="contact-us-popup__subtitle">We’ll contact your soon!</p>
+
+      <button class="btn btn_popup">Everything is clear</button>
+    </div>
+  </div>
+
+  <!--  -->
+
   <button class="to-top-button"></button>
 
   <header class="header">
@@ -59,7 +116,7 @@
           <div class="hero-section__bridge-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
             <picture>
               <!-- <source srcset="./images/hero-bridge-logo.webp ./images/hero-bridge-logo@2x.webp 2x" type="image/webp"> -->
-              <source srcset="./images/hero-bridge-logo.png ./images/hero-bridge-logo@2x.png 2x" type="image/png">
+              <source srcset="./images/hero-bridge-logo.png, ./images/hero-bridge-logo@2x.png 2x" type="image/png">
               <img src="./images/hero-bridge-logo.png" alt="">
             </picture>
             <h2 class="hero-section__bridge-image-title">Bridge title</h2>
@@ -170,6 +227,141 @@
       <div class="wrap">
         <div class="rankings__container">
           <h2 class="section-title">Rankings</h2>
+          <div class="rankings__tags">
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/eth.svg" alt="">
+                <span>ETH</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/eos.svg" alt="">
+                <span>EOS</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/tron.svg" alt="">
+                <span>Tron</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/ontology.svg" alt="">
+                <span>Ontology</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/thunder-core.svg" alt="">
+                <span>Thunder Core</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/waves.svg" alt="">
+                <span>Waves</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/wax.svg" alt="">
+                <span>WAX</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/steem.svg" alt="">
+                <span>Steem</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/hive.svg" alt="">
+                <span>Hive</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/bsc.svg" alt="">
+                <span>BSC</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/flow.svg" alt="">
+                <span>Flow</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/near.svg" alt="">
+                <span>Near</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/avalanche.svg" alt="">
+                <span>Avalanche</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/telos.svg" alt="">
+                <span>Telos</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/tezos.svg" alt="">
+                <span>Tezos</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/rsk.svg" alt="">
+                <span>RSK</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/vulcan.svg" alt="">
+                <span>Vulcan Forget</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/harmony.svg" alt="">
+                <span>Harmony</span>
+              </div>
+            </label>
+            <label class="rankings__tag">
+              <input type="checkbox">
+              <div class="rankings__tag-container">
+                <img src="./images/tags/polygon.svg" alt="">
+                <span>Polygon</span>
+              </div>
+            </label>
+          </div>
           <div class="rankings__tabs tabs">
             <a class="rankings__tab rankings__tab_active tabs__tab tabs__tab_active">By TVL</a>
             <a class="rankings__tab tabs__tab">By the rate</a>
