@@ -1,0 +1,128 @@
+.grafics-panel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background: white;
+  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.09);
+  border-radius: 18px;
+  bottom: -130px;
+
+  &__top, &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 0 auto;
+    padding: 0 56px;
+  }
+
+  &__top {
+    border-bottom: 1px solid #E5E5EC;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+
+    &-title-block {
+      display: flex;
+    }
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: no-repeat center;
+      margin-right: 16px;
+
+      &_btc {
+        background-image: url('../../images/btc-icon.svg');
+        background-color: #F7931A;
+      }
+    }
+
+    &-name-block {
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+    }
+
+    &-name {
+      color: $font-dark;
+      margin-bottom: 7px;
+    }
+
+    &-currancy {
+      font-size: 12px;
+      color: $font-light;
+    }
+
+    &-grafic {
+      margin-right: 8px;
+    }
+
+    &-value-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-value {
+      color: $font-dark;
+      margin-bottom: 6px;
+    }
+
+    &-grow {
+      color: #51AE6F;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $font-dark;
+    cursor: pointer;
+    transition: opacity .2s;
+    padding: 0 15px;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &_active {
+      color: white;
+      background-color: $font-dark;
+      cursor: auto;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__all-currencies {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #00C1FF;
+    transition: opacity .2s;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.company-rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 210px;
+  background: linear-gradient(180deg, #48C14E 0%, #47C14F 7.21%, #46BF51 14.43%, #43BD54 21.64%, #3EBB59 28.86%, #39B75F 36.07%, #32B366 43.29%, #2BAE6E 50.5%, #23A977 57.71%, #1CA47F 64.93%, #15A086 72.14%, #109C8C 79.36%, #0B9A91 86.57%, #089894 93.78%, #079696 101%, #069697 108.21%);
+  border-radius: 28px;
+  padding: 32px;
+  margin-bottom: 16px;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+    margin: 0;
+  }
+
+  &__value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  &__num {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  &__caption {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+  }
+}

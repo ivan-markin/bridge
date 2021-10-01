@@ -1,0 +1,58 @@
+.popup-form {
+  display: flex;
+  flex-direction: column;
+
+  input[type="text"],
+  input[type="email"] {
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 48px;
+    color: $font-dark;
+    outline: none;
+    padding: 0 16px;
+
+    &::placeholder {
+      color: rgba(0, 32, 51, 0.3);
+    }
+
+    &:active, &:focus {
+      border-color: $blue;
+    }
+
+    &.error {
+      border-color: #EB5757;
+      margin-bottom: 0;
+    }
+  }
+
+  &__error-text-block {
+    position: absolute;
+    left: 12px;
+    bottom: -22px;
+    width: 100%;
+    color: #EB5757;
+    font-size: 14px;
+    line-height: 1.33;
+
+    @media (max-width: 375px) {
+      left: 6px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 12px;
+    }
+  }
+
+  &__input-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      margin-bottom: 33px;
+    }
+  }
+}

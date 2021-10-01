@@ -1,0 +1,13 @@
+.main {
+  padding-bottom: 135px;
+
+  @media (max-width: 420px) {
+    padding-bottom: 60px;
+  }
+
+  &_inner-page {
+    background: url('../../images/page-bg.jpg') no-repeat;
+    background-size: contain;
+    // background-position-y: 80px;
+  }
+}

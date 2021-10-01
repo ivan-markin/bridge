@@ -1,0 +1,8 @@
+.text-link {
+  color: $blue;
+  transition: color .1s;
+
+  &:hover {
+    color: #368FFF;
+  }
+}

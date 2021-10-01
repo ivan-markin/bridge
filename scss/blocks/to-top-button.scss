@@ -1,0 +1,19 @@
+.to-top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: block;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  box-shadow: 0px 7px 30px rgba(25, 95, 183, 0.22);
+  border: none;
+  background: #FFFFFF url("data:image/svg+xml,%3Csvg width='21' height='12' viewBox='0 0 21 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 10L10.5 2L19 10' stroke='%230071FF' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center;
+  z-index: 99;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 0px 2px 6px rgba(2, 118, 255, 0.38), 0px 7px 30px rgba(25, 95, 183, 0.4);
+  }
+}

@@ -1,0 +1,16 @@
+.card-tag {
+  display: flex;
+  border-radius: 15px;
+  background-color: #F4F6FB;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: $font-dark;
+  cursor: pointer;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+
+  &:not(:last-of-type) {
+    margin-right: 6px;
+  }
+}

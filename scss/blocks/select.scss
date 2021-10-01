@@ -1,0 +1,37 @@
+.select {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 16px;
+    color: $font-light;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    flex: auto;
+    position: relative;
+    background-color: white;
+    border: #E5E5EC 1px solid;
+    border-radius: 8px;
+    height: 60px;
+    cursor: pointer;
+    padding: 0 40px 0 14px;
+
+    svg {
+      position: absolute;
+      top: calc(50% - 3px);
+      right: 14px;
+    }
+  }
+
+  &__image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+}
