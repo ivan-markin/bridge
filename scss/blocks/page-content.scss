@@ -468,6 +468,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     gap: 24px;
+    position: relative;
     margin: 0;
     padding: 0;
 
@@ -487,7 +488,7 @@
       display: flex;
       align-items: center;
       list-style: none;
-      position: relative;
+      // position: relative;
       transition: color .2s;
 
       img {
