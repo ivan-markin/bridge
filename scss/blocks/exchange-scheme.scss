@@ -1,0 +1,29 @@
+.exchange-scheme {
+    display: flex;
+    width: fit-content;
+
+    li {
+      list-style: none;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1;
+      color: #00C1FF;
+
+      &:not(:last-of-type) {
+        position: relative;
+        padding-right: 28px;
+        margin-right: 3px;
+
+        &::after {
+          content: '';
+          width: 24px;
+          height: 24px;
+          background: url('../../images/exchange-icon.svg') no-repeat;
+          background-size: contain;
+          position: absolute;
+          right: 0;
+          top: calc(50% - 12px);
+        }
+      }
+    }
+  }

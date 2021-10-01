@@ -1,0 +1,67 @@
+.bridges {
+  padding-top: 207px;
+
+  &__title {
+    margin: 0 auto 32px;
+  }
+
+  &__items-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 34px;
+  }
+
+  &__item {
+
+    &-badge {
+      display: none;
+      justify-content: center;
+      position: relative;
+      height: 70px;
+      border-radius: 20px;
+      background-color: $green;
+      z-index: 1;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1;
+      padding-top: 9px;
+    }
+
+    &_verified &-badge {
+      display: flex;
+    }
+
+    &-container {
+      position: relative;
+      background-color: white;
+      background: #FFFFFF;
+      box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.09);
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+      z-index: 2;
+    }
+
+    &_verified &-container {
+      border: 3px $green solid;
+      top: -35px;
+    }
+
+    &-image {
+      display: block;
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    &-content {
+      padding: 20px 18px 26px;
+    }
+  }
+}
