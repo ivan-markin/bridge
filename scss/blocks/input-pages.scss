@@ -1,0 +1,20 @@
+.input-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  font-size: 16px;
+  color: $link-gray;
+  border-radius: 12px;
+  background: none;
+  outline: none;
+  border: #ABC1CD 1px solid;
+  transition: all .2s;
+
+  &:focus,
+  &:active {
+    border-color: $blue;
+  }
+}
