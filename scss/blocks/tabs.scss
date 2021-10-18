@@ -11,7 +11,7 @@
     transition: color .2s;
     padding-bottom: 14px;
 
-    &:hover {
+    &:not(.tabs__tab_active):hover {
       color: #2485FF;
     }
 
@@ -20,5 +20,15 @@
       color: $font-dark;
       cursor: auto;
     }
+  }
+
+  &__tab-counter {
+    display: inline-flex;
+    border-radius: 4px;
+    background-color: $blue;
+    font-size: 14px;
+    color: white;
+    padding: 4px;
+    margin-left: 9px;
   }
 }

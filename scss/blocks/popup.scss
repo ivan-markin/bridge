@@ -1,0 +1,101 @@
+.popup {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: .44);
+  z-index: -1;
+  opacity: 0;
+  transition: all .5s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 9999;
+  }
+
+  &__container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    min-width: 434px;
+    border-radius: 18px;
+    background-color: #fff;
+    transform: translateX(-50%) translateY(-50%) scale(.25);
+    transition: all .5s;
+    padding: 32px 32px 24px;
+  }
+
+  &.active &__container {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+
+  &__title {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin: 0 0 12px;
+  }
+
+  &__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: $font-light;
+    margin: 0 0 24px;
+  }
+
+  &__links-block {
+    display: flex;
+    margin-bottom: 32px;
+
+    a:not(:last-of-type) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: flex-end;
+    height: 58px;
+    width: fit-content;
+    font-size: 18px;
+    color: $link-gray;
+    transition: all .2s;
+
+    &_email {
+      background: url('../../images/mail-icon.svg') no-repeat left top;
+    }
+
+    &_telegram {
+      background: url('../../images/telegram-icon.svg') no-repeat left top;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  &__close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../../images/popup-close-icon.svg') no-repeat center;
+    border: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+      transform: rotate(.5turn);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.collapse-link {
+  display: block;
+  font-size: 16px;
+  color: #3F87D9;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all .2s;
+  padding-right: 16px;
+  margin: 0 auto;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 12px;
+    background: url('../../images/arrow-down.svg') no-repeat;
+    background-size: contain;
+    transition: all .2s;
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+
+  &.active {
+    &::after {
+      transform: rotate(.5turn);
+    }
+  }
+}

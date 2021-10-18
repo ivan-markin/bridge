@@ -28,12 +28,8 @@
       left: 34px;
     }
 
-    .bridge-card__title {
-      padding: 0;
-
-      &::before {
-        display: none;
-      }
+    .bridge-card__title-counter {
+      display: none;
     }
   }
 
@@ -132,32 +128,30 @@
   }
 
   &__title {
+    display: flex;
+    align-items: center;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
     color: $font-dark;
     position: relative;
-    padding-left: 32px;
     margin: 0 0 10px;
+  }
 
-    &::before {
-      counter-increment: bridges;
-      content: counter(bridges);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Inter', sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      color: white;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background-color: $blue;
-      position: absolute;
-      left: 0;
-      top: calc(50% - 12px);
-    }
+  .bridge-card__title-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $blue;
+    margin-right: 8px;
   }
 
   &.verified &__title {

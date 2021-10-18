@@ -11,6 +11,20 @@
 </head>
 
 <body>
+
+  <div class="popup">
+    <div class="popup__container">
+      <button class="popup__close"></button>
+      <h2 class="popup__title">Are you a bridge owner?</h2>
+      <p class="popup__subtitle">Contact us for details and a special offer!</p>
+      <div class="popup__links-block">
+        <a class="popup__link popup__link_email" href="mailto:info@debridges.com">info@debridges.com</a>
+        <a class="popup__link popup__link_telegram" href="">@debridges</a>
+      </div>
+      <button class="popup__button btn btn_primary">Done</button>
+    </div>
+  </div>
+
   <button class="to-top-button"></button>
 
   <header class="header">
@@ -88,6 +102,7 @@
             <div class="bridge-parameters__parameters">
               <p class="bridge-parameters__item">Bridge Developer: <a href="">Developer</a></p>
               <p class="bridge-parameters__item">Audit: <a href="">Quantstamp</a></p>
+              <p class="bridge-parameters__item">Category: <span>Assets bridge</span></p>
               <div class="bridge-parameters__table">
                 <span class="bridge-parameters__table-name">Website:</span>
                 <div class="bridge-parameters__table-tags">
@@ -129,6 +144,7 @@
                   </a>
                 </div>
               </div>
+              <a class="bridge-parameters__link" href="">Are you a bridge owner?</a>
             </div>
           </div>
           <div class="company-rate">
@@ -151,11 +167,13 @@
               <span>+39.69%</span>
             </div>
           </div>
+          <a href=""><img class="page-content__banner" src="./images/banner-vertical.png" alt=""></a>
         </div>
+
         <div class="page-content__right-column">
           <div class="page-content__tabs tabs">
             <a class="page-content__tab tabs__tab tabs__tab_active">Bridge&nbsp;overview</a>
-            <a class="page-content__tab tabs__tab" href="./page-reviews.html">Reviews</a>
+            <a class="page-content__tab tabs__tab" href="./page-reviews.html">Reviews<span class="tabs__tab-counter">22</span></a>
             <a class="page-content__tab tabs__tab" href="./page-instructions.html">Instructions</a>
           </div>
           <div class="page-content__right-column-content">
@@ -281,6 +299,8 @@
                   <span class="page-content__currencies-list-item-name">Bitcoin</span>
                 </li>
               </ul>
+
+              <button class="collapse-link">Show more</button>
             </div>
             <div class="page-content__item">
               <h4 class="page-content__item-title">What is Ethereum?</h4>

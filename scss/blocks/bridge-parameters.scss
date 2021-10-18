@@ -6,7 +6,7 @@
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
   border-radius: 28px;
   position: relative;
-  padding: 40px 20px 36px;
+  padding: 40px 20px 20px;
   margin-bottom: 16px;
 
   &.gold,
@@ -92,22 +92,29 @@
 
   &__button {
     padding: 0 40px;
-    margin-bottom: 32px;
   }
 
   &__parameters {
     width: 100%;
+    border-top: #E9EAEA 1px solid;
+    padding: 24px 0 0;
+    margin-top: 26px;
   }
 
   &__item {
+    display: flex;
+    justify-content: space-between;
     font-size: 16px;
     color: $font-light;
     margin: 0 0 18px;
 
     a {
-      font-weight: 700;
       color: $font-dark;
       text-decoration: none;
+    }
+
+    span {
+      color: $link-gray;
     }
   }
 
@@ -118,6 +125,7 @@
     width: 100%;
     row-gap: 8px;
     column-gap: 10px;
+    margin-bottom: 20px;
 
     &-name {
       font-size: 16px;
@@ -151,7 +159,21 @@
 
     &-tags {
       display: flex;
+      flex-direction: row-reverse;
       flex-wrap: wrap;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #3F87D9;
+    transition: color .1s;
+    margin: 0 auto;
+
+    &:hover {
+      color: $blue;
     }
   }
 }
