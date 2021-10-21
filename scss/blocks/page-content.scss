@@ -26,6 +26,7 @@
     background-color: #fff;
 
     &-content {
+      position: relative;
       padding: 40px 60px 60px;
 
       @media (max-width: 1024px) {
@@ -35,6 +36,7 @@
   }
 
   #reviews &__title-block {
+    position: relative;
     margin-bottom: 40px;
 
     .page-content__title {
@@ -63,6 +65,14 @@
         margin-left: 4px;
       }
     }
+  }
+
+  &__bridge-owner-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    color: $blue;
   }
 
   &__review {
@@ -321,11 +331,30 @@
   }
 
   &__contents-block {
+    display: flex;
+    flex-direction: column;
     background-color: #F5F7F9;
+    border-radius: 8px;
+    transition: all .2s;
     padding: 28px 30px 40px 54px;
 
-    @media (max-width: 420px) {
-      padding: 24px 20px 30px;
+    @media (max-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 16px;
+    }
+
+    @media (max-width: 374px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &_fixed {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      width: calc(100% - 24px);
+      z-index: 9999;
     }
 
     &-title {
@@ -334,6 +363,14 @@
       justify-content: space-between;
       margin-bottom: 25px;
 
+      @media (max-width: 768px) {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 374px) {
+        margin-bottom: 8px;
+      }
+
       h3 {
         font-size: 20px;
         font-weight: 500;
@@ -341,6 +378,11 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         margin: 0;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+          margin-right: 16px;
+        }
       }
 
       a {
@@ -354,6 +396,31 @@
         &:hover {
           background-color: #5399EA;
         }
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    select {
+      display: none;
+      height: 40px;
+      cursor: pointer;
+      border-radius: 12px;
+      border: 1px solid #EFEFEF;
+      font-size: 11px;
+      font-weight: 700;
+      outline: none;
+      padding: 0 12px;
+
+      &:focus {
+        border: 1px solid $blue;
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+        flex: auto;
       }
     }
   }
@@ -366,6 +433,10 @@
 
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
     }
 
     &-link {
@@ -624,7 +695,7 @@
 
       p {
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 1.5;
         margin: 0;
 

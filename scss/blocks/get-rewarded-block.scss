@@ -1,6 +1,7 @@
 .get-rewarded-block {
   border-radius: 8px;
   background: #F5F7F9 url('../../images/get-rewarded-bg.svg') no-repeat right bottom;
+  min-height: 168px;
   padding: 27px 40px;
   margin-bottom: 37px;
 
@@ -11,6 +12,14 @@
     line-height: 1.25;
     color: $font-dark;
     margin: 0 0 24px;
+  }
+
+  &__description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.375;
+    max-width: 60%;
+    margin: 0;
   }
 
   &__parameters {

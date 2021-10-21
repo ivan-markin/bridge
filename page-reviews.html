@@ -162,9 +162,21 @@
                 </div>
               </div>
             </div>
+
+            <!-- Второе состояние баннера -->
+            <div class="get-rewarded-block isover" style="display: none;">
+              <h2 class="get-rewarded-block__title">The competition is over!</h2>
+              <p class="get-rewarded-block__description">
+                Check your email to see if you are a winner.
+                Prize money was sent to the wallets specified when writing the review.
+              </p>
+            </div>
+            <!---->
+
             <div class="page-content__title-block">
               <h2 class="page-content__title page-content__title_small">Reviews about bridge</h2>
               <p>The number of people voted <span>22</span></p>
+              <a class="page-content__bridge-owner-link" href="">Are you a bridge owner?</a>
             </div>
             <div class="page-content__reviews">
               <div class="page-content__review">
@@ -400,7 +412,36 @@
               <p class="response-form__fieldset-title">Prize receiving address <a class=""></a></p>
               <div class="response-form__inputs-block">
                 <input class="response-form__input" type="text" placeholder="Your wallet address">
-                <input class="response-form__input" type="text" placeholder="Currency">
+                <div class="response-form__currency-select select active">
+                  <input class="select__input" type="text" placeholder="Currency">
+
+                  <ul class="select__dropdown">
+                    <li class="select__item">
+                      <img src="./images/currencies/btc.svg" alt="">
+                      <span>Bitcoin</span>
+                    </li>
+                    <li class="select__item">
+                      <img src="./images/currencies/monero.svg" alt="">
+                      <span>Monero</span>
+                    </li>
+                    <li class="select__item">
+                      <img src="./images/currencies/dash.svg" alt="">
+                      <span>Dash</span>
+                    </li>
+                    <li class="select__item">
+                      <img src="./images/currencies/litecoin.svg" alt="">
+                      <span>Litecoin</span>
+                    </li>
+                    <li class="select__item">
+                      <img src="./images/currencies/btc.svg" alt="">
+                      <span>Bitcoin</span>
+                    </li>
+                    <li class="select__item">
+                      <img src="./images/currencies/monero.svg" alt="">
+                      <span>Monero</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="response-form__cta-block">
                 <button class="btn btn_light-blue">Leave&nbsp;a&nbsp;comment</button>
