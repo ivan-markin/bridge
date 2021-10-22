@@ -32,6 +32,17 @@
       margin-right: 6px;
     }
 
+    &-counter {
+      background: #0071FF;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      color: white;
+      padding: 5px 6px 3px;
+      margin-left: 10px;
+    }
+
     @media (max-width: 520px) {
       display: flex;
     }
