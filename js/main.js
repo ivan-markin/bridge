@@ -29,25 +29,6 @@ function getYCoord(elem) {
   return box.top + scrollY;
 }
 
-// function changePanelPosition() {
-//   const contentsBlock = document.querySelector('.page-content__contents-block');
-//   const hasClass = contentsBlock.classList.contains('page-content__contents-block_fixed');
-
-//   if (scrollY > getYCoord(contentsBlock)) {
-//     if (!hasClass) {
-//       contentsBlock.classList.add('page-content__contents-block_fixed');
-//       return;
-//     }
-//   }
-
-//   if (scrollY <= getYCoord(contentsBlock)) {
-//     if (hasClass) {
-//       contentsBlock.classList.remove('page-content__contents-block_fixed');
-//       return;
-//     }
-//   }
-// }
-
 function changePanelPosition() {
   const contentsBlock = document.querySelector('.page-content__contents-block');
   const isFixed = contentsBlock.classList.contains('page-content__contents-block_fixed');

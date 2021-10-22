@@ -46,6 +46,7 @@
 @import './blocks/collapse-link.scss';
 @import './blocks/popup.scss';
 @import './blocks/get-rewarded-block.scss';
+@import './blocks/networks-filter.scss';
 
 * {
   box-sizing: border-box;
@@ -54,6 +55,9 @@
 body {
   font-family: 'Fira Sans', 'Roboto', sans-serif;
   color: $font-dark;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   width: 100%;
 
   @media (max-width: 420px) {

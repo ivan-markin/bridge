@@ -23,12 +23,29 @@
     border: $blue 1px solid;
   }
 
+  img {
+    margin-right: 8px;
+  }
+
   &_primary {
     height: 54px;
   }
 
   &_secondary {
     border: #C4C4C4 1px solid;
+    background-color: #fff;
+    color: $blue;
+    height: 54px;
+
+    &:hover {
+      border-color: $blue;
+      background-color: #fff;
+      color: $blue;
+    }
+  }
+
+  &_secondary-blue {
+    border: $blue 1px solid;
     background-color: #fff;
     color: $blue;
     height: 54px;
