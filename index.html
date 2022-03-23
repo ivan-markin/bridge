@@ -8,10 +8,65 @@
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <title>Bridge</title>
-<script defer src="bundle.4b593b90260225bfb5ef.js"></script><link href="styles.css" rel="stylesheet"></head>
+<script defer src="bundle.8fd83c1280ce23c96896.js"></script><link href="styles.css" rel="stylesheet"></head>
 
 <body>
 
+  <!-- FEEDBACK POPUP -->
+  <div class="feedback-popup outer-area">
+    <div class="feedback-popup__container popup-container">
+      <button class="feedback-popup__close popup-close"></button>
+      <div class="feedback-popup__top">
+        <img class="feedback-popup__title-image" src="./images/hand-icon.svg" alt="">
+        <h2 class="feedback-popup__title thirds-title">Hey, you are early!</h2>
+        <p class="feedback-popup__description">
+          We appreciate your interest in our platform, so we are developing the new version and need your feedback and support.
+          Please stay tuned and wait for our updates and news. We do our best for you!
+        </p>
+        <div class="feedback-popup__socials">
+          <a href="" class="feedback-popup__socials-item text-link">
+            <img src="./images/popup-telegram-icon.svg" alt="">
+            Join our community
+          </a>
+          <a href="" class="feedback-popup__socials-item text-link">
+            <img src="./images/popup-twitter-icon.svg" alt="">
+            Read latest news
+          </a>
+        </div>
+      </div>
+      <div class="feedback-popup__divider"></div>
+      <div class="feedback-popup__bottom">
+        <h2 class="feedback-popup__title thirds-title">Also</h2>
+        <p class="feedback-popup__description">
+          We plan to issue a DBR token to pay cashback to bridge users.
+          If you are interested in token rewards or have any idea how to improve the platform, please contact us!
+        </p>
+        <form class="feedback-popup__form" action="">
+          <div class="text-input">            
+            <input class="text-input__input" type="text" placeholder="Your name">
+            <label class="text-input__label" for="">Your name</label>
+          </div>
+          <div class="text-input">            
+            <input class="text-input__input" type="text" placeholder="Your Telegram/Discord">
+            <label class="text-input__label" for="">Your Telegram/Discord</label>
+          </div>
+          <button class="feedback-popup__form-button btn btn_primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="feedback-popup__confirmation">
+      <button class="feedback-popup__close popup-close"></button>
+      <img src="./images/envelop.svg" alt="">
+      <h2 class="feedback-popup__title thirds-title">Congratulations!</h2>
+      <p class="feedback-popup__description">
+        Your application has been sent!
+      </p>
+      <button class="btn btn_primary popup-close">Ok</button>
+    </div> -->
+  </div>
+  
+  
   <!-- SIDE MENU -->
   <div class="side-menu">
     <div class="side-menu__container">
@@ -400,7 +455,7 @@
 
         <nav class="header__menu main-menu">
           <ul>
-            <li><a href="">Join us</a></li>
+            <li><a id="joinUsLink">Join us</a></li>
             <li><a id="networksLink">Networks</a></li>
             <li><a href="">Rankings</a></li>
             <li><a href="">Contact us</a></li>
