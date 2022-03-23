@@ -8,10 +8,45 @@
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <title>Bridge</title>
-<script defer src="bundle.8fd83c1280ce23c96896.js"></script><link href="styles.css" rel="stylesheet"></head>
+<script defer src="bundle.86aa5f9803dc2de94b21.js"></script><link href="styles.css" rel="stylesheet"></head>
 
 <body>
 
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__header">
+      <a href="">
+        <img class="mobile-menu__logo logo" src="./images/bridge-logo-dark.svg" alt="">
+      </a>
+      <button class="mobile-menu__close"></button>
+    </div>
+    <div class="mobile-menu__menu-block">
+      <nav class="mobile-menu__menu main-menu">
+        <ul>
+          <li>
+            <a id="networksLink">
+              <img src="./images/networks-icon.svg" alt="">
+              Networks
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/popup-telegram-icon.svg" alt="">
+              Telegram
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/popup-twitter-icon.svg" alt="">
+              Twitter
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="mobile-menu__contact-us btn btn_light-blue" href="">Contact us</a>
+    </div>
+  </div>  
+  
   <!-- FEEDBACK POPUP -->
   <div class="feedback-popup outer-area">
     <div class="feedback-popup__container popup-container">
@@ -449,22 +484,38 @@
   <header class="header">
     <div class="wrap">
       <div class="header__container">
-        <a href="./index.html">
-          <img class="header__logo logo" src="./images/bridge-logo-dark.svg" alt="Bridge">
-        </a>
-
-        <nav class="header__menu main-menu">
-          <ul>
-            <li><a id="joinUsLink">Join us</a></li>
-            <li><a id="networksLink">Networks</a></li>
-            <li><a href="">Rankings</a></li>
-            <li><a href="">Contact us</a></li>
-          </ul>
-        </nav>
+        <div class="header__container-left">
+          <a href="./index.html">
+            <img class="header__logo logo" src="./images/bridge-logo-dark.svg" alt="Bridge">
+          </a>
+          
+          <nav class="header__menu main-menu">
+            <ul>
+              <li>
+                <a id="networksLink">
+                  <img src="./images/networks-icon.svg" alt="">
+                  Networks
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/popup-telegram-icon.svg" alt="">
+                  Telegram
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/popup-twitter-icon.svg" alt="">
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
 
         <div class="header__cta-block">
-          <a class="header__cta btn btn_light-blue" href="">Add&nbsp;bridge</a>
-          <a class="menu-button" href=""></a>
+          <a class="header__cta btn btn_light-blue" href="">Contact us</a>
+          <a class="menu-button"></a>
         </div>
       </div>
     </div>
