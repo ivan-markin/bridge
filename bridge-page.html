@@ -526,20 +526,20 @@
       <div class="wrap">
         <div class="hero-section__container">
           <div class="hero-section__title-block" data-aos="fade" data-aos-duration="2000">
-            <h1 class="hero-section__title primary-title">
-              All blockchain
-              <span>bridges aggregator</span>
-            </h1>
-            <p class="hero-section__subtitle">
-              Truthful reviews and ratings from the community
-            </p>
-          </div>
-          <picture>
-            <!-- <source srcset="/images/hero-image.webp, /images/hero-image@2x.webp 2x" type="image/webp"> -->
-            <source srcset="/images/hero-image.png, /images/hero-image@2x.png 2x" type="image/png">
-            <img class="hero-section__main-image" src="/images/hero-image.png" alt="" data-aos="fade-left"
-              data-aos-duration="1000" data-aos-delay="500">
-          </picture>
+            <a class="path-link" href="">View all bridges</a>
+            <div class="hero-section__text-block">
+              <img src="./images/bridges/ethereum-eth-logo.svg" alt="">
+              <div class="hero-section__text">
+                <h1 class="hero-section__title primary-title">
+                  Ethereum Bridges
+                </h1>
+                <p class="hero-section__subtitle">
+                  Truthful reviews and ratings from the community
+                </p>
+              </div>
+            </div>
+            
+          </div>         
           <div class="hero-section__bridge-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
             <img src="/images/ton-bridge-logo.png" alt="">
             <h2 class="hero-section__bridge-image-title">Bridge title</h2>
@@ -549,260 +549,7 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="quotes">
-      <div class="wrap">
-        <div class="quotes__container">
-          <div class="quotes__item">
-            <div class="quotes__item-logo quotes__item-logo_btc">
-              <img src="/images/btc-logo.svg" alt="">
-            </div>
-            <span class="quotes__item-name">BTC/USD</span>
-            <span class="quotes__item-value">33,906</span>
-            <span class="quotes__item-grow">+11.71%</span>
-          </div>
-          <div class="quotes__item">
-            <div class="quotes__item-logo quotes__item-logo_eth">
-              <img src="/images/eth-logo.svg" alt="">
-            </div>
-            <span class="quotes__item-name">BTC/USD</span>
-            <span class="quotes__item-value">33,906</span>
-            <span class="quotes__item-grow">+11.71%</span>
-          </div>
-          <div class="quotes__item">
-            <div class="quotes__item-logo quotes__item-logo_xmr">
-              <img src="/images/xmr-logo.svg" alt="">
-            </div>
-            <span class="quotes__item-name">BTC/USD</span>
-            <span class="quotes__item-value">33,906</span>
-            <span class="quotes__item-grow">+11.71%</span>
-          </div>
-          <div class="quotes__item">
-            <div class="quotes__item-logo quotes__item-logo_dash">
-              <img src="/images/dash-logo.svg" alt="">
-            </div>
-            <span class="quotes__item-name">BTC/USD</span>
-            <span class="quotes__item-value">33,906</span>
-            <span class="quotes__item-grow">+11.71%</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="transfer-form">
-      <div class="wrap">
-        <div class="transfer-form__container">
-          <h2 class="transfer-form__title">Easy way to transfer</h2>
-          <form class="transfer-form__form">
-            <div class="select">
-              <span class="select__title">Transfer from</span>
-              <button class="select__input">
-                <img class="select__image" src="/images/eth-logo-color.png" alt="">
-                <span class="select__value">Ethereum&nbsp;Mainnet</span>
-                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.2929 0.292894C10.6834 -0.0976306 11.3166 -0.0976306 11.7071 0.292894C12.0976 0.683418 12.0976 1.31658 11.7071 1.70711L6.70711 6.70711C6.31658 7.09763 5.68342 7.09763 5.29289 6.70711L0.292894 1.70711C-0.0976312 1.31658 -0.0976312 0.683417 0.292894 0.292893C0.683418 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L6 4.58579L10.2929 0.292894Z"
-                    fill="#142438" />
-                </svg>
-              </button>
-            </div>
-            <button class="transfer-form__change-button">
-              <img src="/images/change-button-icon.svg" alt="">
-            </button>
-            <div class="select">
-              <span class="select__title">To</span>
-              <button class="select__input">
-                <img class="select__image" src="/images/binance-logo.png" alt="">
-                <span class="select__value">Binance&nbsp;Smart&nbsp;Chain</span>
-                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.2929 0.292894C10.6834 -0.0976306 11.3166 -0.0976306 11.7071 0.292894C12.0976 0.683418 12.0976 1.31658 11.7071 1.70711L6.70711 6.70711C6.31658 7.09763 5.68342 7.09763 5.29289 6.70711L0.292894 1.70711C-0.0976312 1.31658 -0.0976312 0.683417 0.292894 0.292893C0.683418 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L6 4.58579L10.2929 0.292894Z"
-                    fill="#142438" />
-                </svg>
-              </button>
-            </div>
-            <div class="transfer-form__input-block">
-              <span class="transfer-form__input-block-title">Transfer&nbsp;amount</span>
-              <div class="transfer-form__input">
-                <span class="transfer-form__input-currency-sign">$</span>
-                <input type="text" placeholder="0.00">
-                <button>
-                  <span>TON&nbsp;Crystal</span>
-                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.2929 0.292894C10.6834 -0.0976306 11.3166 -0.0976306 11.7071 0.292894C12.0976 0.683418 12.0976 1.31658 11.7071 1.70711L6.70711 6.70711C6.31658 7.09763 5.68342 7.09763 5.29289 6.70711L0.292894 1.70711C-0.0976312 1.31658 -0.0976312 0.683417 0.292894 0.292893C0.683418 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L6 4.58579L10.2929 0.292894Z"
-                      fill="#142438" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <button class="transfer-form__submit-button btn">Transfer</button>
-          </form>
-          <div class="transfer-form__total-fee">
-            <p>Total fee: <span>3%</span></p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="widget">
-      <div class="widget__content">
-        <h2 class="widget__title section-title">Hot news</h2>
-        <div class="widget__container">
-          <img src="/images/widget-example.png" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="rankings">
-      <div class="wrap">
-        <div class="rankings__container">
-          <h2 class="primary-title">Rankings</h2>
-
-          <button class="rankings__networks-button">
-            Select networks
-            <span class="rankings__networks-button-counter">3</span>
-          </button>
-
-          <div class="rankings__tags">
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/eth.svg" alt="">
-                <span>ETH</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/eos.svg" alt="">
-                <span>EOS</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/tron.svg" alt="">
-                <span>Tron</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/ontology.svg" alt="">
-                <span>Ontology</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/thunder-core.svg" alt="">
-                <span>Thunder Core</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/waves.svg" alt="">
-                <span>Waves</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/wax.svg" alt="">
-                <span>WAX</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/steem.svg" alt="">
-                <span>Steem</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/hive.svg" alt="">
-                <span>Hive</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/bsc.svg" alt="">
-                <span>BSC</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/flow.svg" alt="">
-                <span>Flow</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/near.svg" alt="">
-                <span>Near</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/avalanche.svg" alt="">
-                <span>Avalanche</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/telos.svg" alt="">
-                <span>Telos</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/tezos.svg" alt="">
-                <span>Tezos</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/rsk.svg" alt="">
-                <span>RSK</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/vulcan.svg" alt="">
-                <span>Vulcan Forget</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/harmony.svg" alt="">
-                <span>Harmony</span>
-              </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/polygon.svg" alt="">
-                <span>Polygon</span>
-              </div>
-            </label>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section>        
 
     <section class="bridges">
       <div class="wrap">
@@ -866,7 +613,22 @@
                 <p class="bridge-card__description">
                   We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
                 </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Transactions per day</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
                 <div class="bridge-card__parameters">
                   <div class="bridge-card__parameters-item">
                     <span class="bridge-card__parameters-name">Category:</span>
@@ -906,7 +668,22 @@
                 <p class="bridge-card__description">
                   We combine the best of traditional and novel finance.
                 </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Transactions per day</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
                 <div class="bridge-card__parameters">
                   <div class="bridge-card__parameters-item">
                     <span class="bridge-card__parameters-name">Category:</span>
@@ -946,7 +723,22 @@
                 <p class="bridge-card__description">
                   We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
                 </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Transactions per day</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
                 <div class="bridge-card__parameters">
                   <div class="bridge-card__parameters-item">
                     <span class="bridge-card__parameters-name">Category:</span>
@@ -995,7 +787,22 @@
                 <p class="bridge-card__description">
                   We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
                 </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Transactions per day</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
                 <div class="bridge-card__parameters">
                   <div class="bridge-card__parameters-item">
                     <span class="bridge-card__parameters-name">Category:</span>
@@ -1038,7 +845,22 @@
                 <p class="bridge-card__description">
                   We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
                 </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Transactions per day</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
                 <div class="bridge-card__parameters">
                   <div class="bridge-card__parameters-item">
                     <span class="bridge-card__parameters-name">Category:</span>
@@ -1081,7 +903,22 @@
                 <p class="bridge-card__description">
                   We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
                 </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Transactions per day</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
+                <p class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Value (24h):</span>
+                  <span class="bridge-card__tvl-value">$20 938 732</span>
+                </p>
                 <div class="bridge-card__parameters">
                   <div class="bridge-card__parameters-item">
                     <span class="bridge-card__parameters-name">Category:</span>
