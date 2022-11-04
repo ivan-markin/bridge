@@ -9352,7 +9352,10 @@ button.swiper-pagination-bullet {
 }
 
 .transfers-faq__menu-block {
+  position: sticky;
+  top: 20px;
   width: 326px;
+  max-height: calc(100vh - 40px);
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -9372,7 +9375,20 @@ button.swiper-pagination-bullet {
 }
 
 .transfers-faq__menu {
+  max-height: calc(100vh - 138px);
+  overflow-y: scroll;
   padding: 28px 32px 40px;
+}
+
+.transfers-faq__menu::-webkit-scrollbar {
+  width: 11px;
+}
+
+.transfers-faq__menu::-webkit-scrollbar-thumb {
+  width: 4px;
+  background-color: var(--primary-blue);
+  border: 4px solid white;
+  border-radius: 2px;
 }
 
 .transfers-faq__menu ul {
