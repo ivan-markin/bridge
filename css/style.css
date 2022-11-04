@@ -9321,10 +9321,33 @@ button.swiper-pagination-bullet {
   outline: none;
 }
 
+@-webkit-keyframes bgFade {
+  from {
+    background: rgba(0, 113, 255, 0.2);
+  }
+
+  to {
+    background: white;
+  }
+}
+
+@keyframes bgFade {
+  from {
+    background: rgba(0, 113, 255, 0.2);
+  }
+
+  to {
+    background: white;
+  }
+}
+
 .transfers-faq {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 40px;
 }
 
@@ -9349,8 +9372,6 @@ button.swiper-pagination-bullet {
 }
 
 .transfers-faq__menu {
-  position: sticky;
-  top: 0;
   padding: 28px 32px 40px;
 }
 
@@ -9382,7 +9403,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("../../img/flag-marker.svg") no-repeat center;
+  background: url("../img/flag-marker.svg") no-repeat center;
   background-size: contain;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -9417,7 +9438,6 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 40px;
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -9425,7 +9445,21 @@ button.swiper-pagination-bullet {
   -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.02);
           box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.02);
   border-radius: 32px;
-  padding: 55px 75px 70px;
+  padding: 35px 55px 50px;
+}
+
+.transfers-faq__item {
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.transfers-faq__item:target {
+  -webkit-animation-name: bgFade;
+          animation-name: bgFade;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .transfers-faq__item-text {
