@@ -9662,6 +9662,50 @@ fieldset {
     font-size: 0.8vw;
   }
 
+  .wallet-info-button__logo {
+    width: 2.34vw;
+    height: 2.34vw;
+    border-radius: 0.42vw;
+    margin-right: 0.3125vw;
+  }
+
+  .wallet-info-button__main-logo {
+    width: 1.56vw;
+  }
+
+  .wallet-info-button__network-logo {
+    width: 0.625vw;
+    bottom: -0.1vw;
+    right: -0.16vw;
+  }
+
+  .wallet-info-button__wallet-num {
+    height: 2.34vw;
+    border-radius: 0.42vw;
+    padding: 0 0.52vw;
+  }
+
+  .wallet-info-button__wallet-num div {
+    margin-right: 0.625vw;
+  }
+
+  .wallet-info-button__wallet-num img {
+    width: 1.25vw;
+  }
+
+  .wallet-info-button__num {
+    font-size: 0.83vw;
+  }
+
+  .wallet-info-button__network {
+    font-size: 0.625vw;
+  }
+
+  .search-button {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+
   .transfers-faq__title {
     font-size: 1.25vw;
   }
@@ -9805,8 +9849,47 @@ fieldset {
 }
 
 @media (max-width: 1280px) {
+  .header__logo {
+    width: 14.7vw;
+  }
+
   .page-tabs__item.active::after {
     height: 2px;
+  }
+
+  .wallet-info-button__logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    margin-right: 6px;
+  }
+
+  .wallet-info-button__main-logo {
+    width: 20px;
+  }
+
+  .wallet-info-button__network-logo {
+    bottom: -2px;
+    right: -3px;
+  }
+
+  .wallet-info-button__wallet-num {
+    height: 30px;
+    border-radius: 8px;
+    padding: 0 8px;
+  }
+
+  .wallet-info-button__wallet-num img {
+    display: none;
+  }
+
+  .wallet-info-button__num {
+    font-size: 10px;
+  }
+
+  .search-button {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -10566,41 +10649,6 @@ fieldset {
     padding: 4px;
   }
 
-  .wallet-info-button__logo {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-    margin-right: 6px;
-  }
-
-  .wallet-info-button__main-logo {
-    width: 20px;
-  }
-
-  .wallet-info-button__network-logo {
-    bottom: -2px;
-    right: -3px;
-  }
-
-  .wallet-info-button__wallet-num {
-    height: 30px;
-    border-radius: 8px;
-    padding: 0 8px;
-  }
-
-  .wallet-info-button__wallet-num img {
-    display: none;
-  }
-
-  .wallet-info-button__num {
-    font-size: 10px;
-  }
-
-  .search-button {
-    width: 20px;
-    height: 20px;
-  }
-
   .transfers-faq__menu-block {
     display: none;
   }
@@ -11052,45 +11100,6 @@ fieldset {
     margin-left: 0.3125vw;
   }
 
-  .wallet-info-button__logo {
-    width: 2.34vw;
-    height: 2.34vw;
-    border-radius: 0.42vw;
-    margin-right: 0.3125vw;
-  }
-
-  .wallet-info-button__main-logo {
-    width: 1.56vw;
-  }
-
-  .wallet-info-button__network-logo {
-    width: 0.625vw;
-    bottom: -0.1vw;
-    right: -0.16vw;
-  }
-
-  .wallet-info-button__wallet-num {
-    height: 2.34vw;
-    border-radius: 0.42vw;
-    padding: 0 0.52vw;
-  }
-
-  .wallet-info-button__wallet-num div {
-    margin-right: 0.625vw;
-  }
-
-  .wallet-info-button__wallet-num img {
-    width: 1.25vw;
-  }
-
-  .wallet-info-button__num {
-    font-size: 0.83vw;
-  }
-
-  .wallet-info-button__network {
-    font-size: 0.625vw;
-  }
-
   .wallet-actions-popup__logo {
     width: 4vw;
     margin-bottom: 0.42vw;
@@ -11304,11 +11313,6 @@ fieldset {
     width: 0.83vw;
     height: 0.83vw;
     margin-right: 0.3125vw;
-  }
-
-  .search-button {
-    width: 1.25vw;
-    height: 1.25vw;
   }
 
   .loader {
