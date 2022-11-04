@@ -9602,6 +9602,11 @@ fieldset {
     font-size: 1.67vw;
   }
 
+  .page-tabs__item {
+    font-size: 0.94vw;
+    padding: 0 0.52vw 0.52vw;
+  }
+
   .transfers__supported {
     margin-bottom: 1.8vw;
   }
@@ -10693,11 +10698,6 @@ fieldset {
   .tooltip-popup__title {
     font-size: 0.625vw;
     margin: 0 0 0.42vw;
-  }
-
-  .page-tabs__item {
-    font-size: 0.94vw;
-    padding: 0 0.52vw 0.52vw;
   }
 
   .select {
